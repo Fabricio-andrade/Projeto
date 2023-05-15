@@ -12,7 +12,9 @@ body {
     height: 100vh;
 }
 
-header {
+/*Estilo Menu Mobile - 425px*/
+
+.menu-mobile {
     position: fixed;
     border-top: 5px solid #A94BE3;
     bottom: 0;
@@ -20,20 +22,41 @@ header {
     justify-content: space-around;
 }
 
-.cabeca {
+.menu-header {
     display: flex;
     list-style: none;
     margin: 1.5vh 0;
+    margin-bottom: 2.5vh;
     justify-content: space-around;
 }
 
-.cabeca > li {
+.menu-header > li {
     display: flex;
     align-items: center;
     padding: 0 5vw;
 }
 
-.menu-mobile {
-    height: 6vh;
+.menu-mobile-img {
+    height: 4vh;
     width: auto;
+}
+
+/*Estilo header Mobile - 425px*/
+
+.header-mobile {
+    text-align: center;
+    border-bottom: 3px solid #E6E6E6;
+    min-width: 100vw;
+}
+
+.abas {
+    justify-content: center;
+    display: flex;
+    margin: 5% 15%;
+    font-size: xx-small;
+    max-width: 90vw;
+}
+
+.abas > h1 {
+    margin: 0 5%;
 }
