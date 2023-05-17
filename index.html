@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,48 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <!--Cabeçalho-->
     <header class="menu-mobile">
         <ul class="menu-header">
-            <li><img class="menu-mobile-img" src="images/pfp.png" alt="Perfil"></li>
-            <li><img class="menu-mobile-img" src="images/home.png" alt="Inicio"></li>
-            <li><img class="menu-mobile-img" src="images/lupa.png" alt="Descobrir"></li>
-            <li><img class="menu-mobile-img" src="images/bell black.png" alt="Notificações"></li>
+            <li><a href="#"><img class="menu-mobile-img" src="images/pfp.png" alt="Perfil"></a></li>
+            <li><a href="#"><img class="menu-mobile-img" src="images/home.png" alt="Inicio"></a></li>
+            <li><a href="#"><img class="menu-mobile-img" src="images/lupa.png" alt="Descobrir"></a></li>
+            <li><a href="#"><img class="menu-mobile-img" src="images/bell black.png" alt="Notificações"></a></li>
         </ul>
     </header>
     <header class="header-mobile">
         <img class="logo" src="" alt="LOGOTIPO">
         <div class="abas">
-            <h1>Recomendados</h1>
-            <h1>Seguidores</h1>
+            <button> Recomendados </button>
+            <button> Seguindo </button>
         </div>
     </header>
+    <!--Conteúdo-->
+    <section class="recomendados">
+        <article class="content-mobile">
+            <div class="contentPerfil-mobile">
+                <img src="images/pfp.png" alt="Imagem de Pefil">
+                <h3>@NomeUser</h3>
+            </div>
+            <p class="recomendacao">Recomendado por quem você segue</p>
+        </article>
+        <article class="content-mobile">
+            <div class="contentPerfil-mobile">
+                <img src="images/pfp.png" alt="Imagem de Pefil">
+                <h3>@NomeUser</h3>
+            </div>
+            <p class="recomendacao">Alta demanda</p>
+        </article>
+        <article class="content-mobile">
+            <div class="contentPerfil-mobile">
+                <img src="images/pfp.png" alt="Imagem de Pefil">
+                <h3>@NomeUser</h3>
+            </div>
+            <p class="recomendacao">Novo usuário</p>
+        </article>
+    </section>
 </body>
+
 </html>
