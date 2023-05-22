@@ -11,15 +11,15 @@
 
 <body>
     <!--Cabeçalho-->
-    <header class="menu-mobile">
+    <header class="menu-mobile" id="mobileMenu">
         <ul class="menu-header">
-            <li><a href="#"><img class="menu-mobile-img" src="images/pfp.png" alt="Perfil"></a></li>
+            <li><a href="#"><img class="menu-mobile-img" src="images/pfp.png" alt="Perfil" id="perfil"></a></li>
             <li><a href="#"><img class="menu-mobile-img" src="images/home.png" alt="Inicio"></a></li>
             <li><a href="#"><img class="menu-mobile-img" src="images/lupa.png" alt="Descobrir"></a></li>
             <li><a href="#"><img class="menu-mobile-img" src="images/bell black.png" alt="Notificações"></a></li>
         </ul>
     </header>
-    <header class="header-mobile">
+    <header class="header-mobile" id="mobileHeader">
         <img class="logo" src="" alt="LOGOTIPO">
         <div class="abas">
             <button> Recomendados </button>
@@ -27,7 +27,7 @@
         </div>
     </header>
     <!--Pop-up perfil/configurações-->
-    <aside>
+    <aside id="aside" style="display: none;">
         <div class="perfilAside">
             <img src="images/pfp.png" alt="Imagem de Pefil">
             <h3>@NomeUser</h3>
@@ -36,12 +36,12 @@
             <button>Perfil</button><br>
             <button>Configurações</button>
         </div>
-        <div class="nightMode">
+        <div class="nightMode" id="nightMode">
             <button>Modo Noturno</button>
         </div>
     </aside>
     <!--Conteúdo-->
-    <section class="recomendados">
+    <section class="recomendados" id="recomendados">
         <article class="content-mobile">
             <div class="contentPerfil-mobile">
                 <img src="images/pfp.png" alt="Imagem de Pefil">
@@ -64,6 +64,7 @@
             <p class="recomendacao">Novo usuário</p>
         </article>
     </section>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
