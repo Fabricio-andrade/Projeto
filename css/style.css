@@ -12,6 +12,19 @@ body {
     max-height: 100dvw;
 }
 
+
+
+/*Modo Noturno*/
+
+.nmON {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.nmON > article > p {
+    color: white !important;
+}
+
 /*Estilo Menu Mobile - 425px*/
 
 .menu-mobile {
@@ -22,11 +35,6 @@ body {
     justify-content: space-around;
     padding-bottom: 1vh;
     background-color: white;
-}
-
-.nmON {
-    background-color: #222 !important;
-    color: white !important;
 }
 
 .menu-header {
@@ -60,13 +68,13 @@ body {
     justify-content: center;
     display: flex;
     margin: 5% 15% 3% 15%;
-    font-size: xx-small;
+    font-size: 1.4rem;
     max-width: 90vw;
 }
 
 .abas > button {
     margin: 0 5%;
-    font-size: x-large;
+    font-size: 1.4rem;
     background-color: transparent;
 }
 
@@ -74,8 +82,6 @@ body {
 aside {
     z-index: 1;
     height: 100vh;
-    width: 70vw;
-    border-right: 3px solid #A94BE3;
     background-color: #E9E9E9;
 }
 
@@ -105,8 +111,9 @@ aside {
 
 .options > button {
     padding-top: 1vh;
-    font-size: x-large;
+    font-size: 1.4rem;
     background-color: transparent;
+    margin-right: 2vw;
 }
 
 .options {
@@ -156,4 +163,9 @@ aside {
 .recomendacao {
     margin: 0 3vw;
     color: #0008;
+}
+
+.recomendados {
+    height: 100vh;
+    z-index: 0;
 }

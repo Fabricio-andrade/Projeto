@@ -4,8 +4,17 @@ const mobileMenu = document.getElementById('mobileMenu');
 const buttons = [...document.getElementsByTagName('button'), ...document.getElementsByTagName('h3')];
 const asideMobile = document.getElementById('aside');
 const recomend = document.getElementById('recomendados');
+const btnFontUp = document.getElementById('fontUp');
+const btnFontDown = document.getElementById('fontDown');
+const paragrafros = document.getElementsByTagName('p');
+const titulos = document.getElementsByTagName('h3');
+const btns = document.getElementsByTagName('button');
 let nmON = 0;
+let size = 1.4;
 
+const arrayParag = [...paragrafros, ...titulos, ...btns];
+
+console.log(arrayParag);
 
 const btnPerfil = document.getElementById('perfil');
 
@@ -40,4 +49,22 @@ btnNightMode.addEventListener('click', () => {
         recomend.classList.remove('nmON');
         nmON = 0;
     }
+})
+
+btnFontUp.addEventListener('click', () => {
+    size = size+0.2;
+    arrayParag.forEach(e => {
+        
+            e.style.fontSize = size + 'rem';
+        
+    });
+})
+
+btnFontDown.addEventListener('click', () => {
+    size = size-0.2;
+    arrayParag.forEach(e => {
+            
+            e.style.fontSize = size + 'rem';
+        
+    });
 })
