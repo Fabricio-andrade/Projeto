@@ -9,10 +9,8 @@
 body {
     overflow: hidden;
     max-width: 100dvw;
-    max-height: 100dvw;
+    max-height: 100dvh;
 }
-
-
 
 /*Modo Noturno*/
 
@@ -168,4 +166,37 @@ aside {
 .recomendados {
     height: 100vh;
     z-index: 0;
+}
+
+/*------------------Versão desktop----------------------*/
+
+@media screen and (width > 768px) {
+    .header-mobile{
+        width: 40vw;
+        margin: 0 auto;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        width: 5vw;
+    }
+
+    .content-mobile {
+        width: 35vw;
+        margin: 0 auto;
+        
+    }
+
+    .recomendados {
+        width: 40vw;
+        margin: 0 auto;
+        border-left: 3px solid #E3E3E3;
+        border-right: 3px solid #E3E3E3;
+    }
+
+    aside {
+        display: block;
+        z-index: 0;
+    }
 }
