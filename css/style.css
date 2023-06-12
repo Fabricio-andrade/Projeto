@@ -12,6 +12,10 @@ body {
     max-height: 100dvh;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /*Modo Noturno*/
 
 .nmON {
@@ -78,9 +82,14 @@ body {
 
 /*Barra lateral - Mobile*/
 aside {
+    display: none;
     z-index: 1;
     height: 100vh;
     background-color: #E9E9E9;
+}
+
+.show {
+    display: block !important;
 }
 
 .perfilAside {
@@ -168,35 +177,74 @@ aside {
     z-index: 0;
 }
 
+.menu-desktop {
+    display: none;
+}
+
 /*------------------Versão desktop----------------------*/
 
 @media screen and (width > 768px) {
     .header-mobile{
-        width: 40vw;
-        margin: 0 auto;
+        display: none;
     }
 
     .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
         display: flex;
-        flex-wrap: wrap;
-        width: 5vw;
+        justify-content: space-between;
+        width: 100vw;
+        border-bottom: 2px solid rgb(94, 94, 94);
+    }
+
+    .nav-desktop > ul {
+        display: flex;
+        list-style: none;
+        margin: 2vh;
+    }
+
+    .nav-desktop > ul > li {
+        margin: 0 1vw;
     }
 
     .content-mobile {
-        width: 35vw;
-        margin: 0 auto;
-        
+        margin: 10vh 3vw;
+        width: 24vw;
+        border: 1px solid #E9E9E9;
+        height: 25vh;
+        border-radius: 5px;
     }
 
     .recomendados {
-        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100vw;
         margin: 0 auto;
-        border-left: 3px solid #E3E3E3;
-        border-right: 3px solid #E3E3E3;
+        border: 0;
+    }
+
+    .fontChange {
+        text-align: left;
+        display: flex;
+        margin: 2vh;
+    }
+
+    .fontChange > button {
+        background-color: transparent;
+        margin: 0 1vh;
+        width: 4vh;
+        height: auto;
+    }
+
+    .fontChange > .nightMode {
+        width: 6vw;
     }
 
     aside {
-        display: block;
-        z-index: 0;
+       display: none;
     }
 }
