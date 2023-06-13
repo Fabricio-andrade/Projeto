@@ -1,7 +1,7 @@
-const btnNightMode = document.getElementById('nightMode');
+
 const btnNightMode2 = document.getElementById('nightMode2');
 const btnNightMode3 = document.getElementById('nightMode3');
-const mobileHeader = document.getElementById('mobileHeader');
+
 const mobileMenu = document.getElementById('mobileMenu');
 const asideMobile = document.getElementById('aside');
 const desktopHeader = document.getElementById('desktop');
@@ -30,28 +30,11 @@ btnPerfil.addEventListener('click', () => {
     asideMobile.classList.toggle('show');
 });
 
-btnNightMode.addEventListener('click', () => {
-    mobileHeader.classList.toggle('nmON');
-    mobileMenu.classList.toggle('nmON');
-    asideMobile.classList.toggle('nmON');
-    desktopHeader.classList.toggle('nmON');
-    buttons.forEach(e => {
-        if (e.style.color == 'white') {
-            e.style.color = 'black';
-        } else {
-            e.style.color = 'white';
-            e.style.backgroundColor = 'transparent';
-        }
-    });
-    recomend.classList.toggle('nmON');
-
-});
-
 btnNightMode2.addEventListener('click', () => {
-    mobileHeader.classList.toggle('nmON');
     mobileMenu.classList.toggle('nmON');
     asideMobile.classList.toggle('nmON');
     desktopHeader.classList.toggle('nmON');
+
     buttons.forEach(e => {
         if (e.style.color == 'white') {
             e.style.color = 'black';

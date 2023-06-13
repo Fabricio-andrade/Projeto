@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produto.css">
 </head>
-
 <body>
+    
     <!--Cabeçalho-->
     <header class="menu-mobile" id="mobileMenu">
         <ul class="menu-header">
@@ -20,20 +19,13 @@
             <li><a href="#"><img class="menu-mobile-img" src="images/bell black.png" alt="Notificações"></a></li>
         </ul>
     </header>
-    <header class="header-mobile" id="mobileHeader">
-        <img class="logo" src="" alt="LOGOTIPO">
-        <div class="abas">
-            <button> Recomendados </button>
-            <button> Seguindo </button>
-        </div>
-    </header>
     <header class="menu-desktop" id="desktop">
         <a href="index.html" ><img src="images/home.png" alt="" class="inicio"></a>
         <div class="fontChange">
             <h4>Aumentar/Diminuir Fonte:</h4>
             <button id="fontDown">A-</button>
             <button id="fontUp">A+</button>
-            <button class="nightMode" id="nightMode">Modo Noturno</button>
+            <button class="nightMode" id="nightMode3">Modo Noturno</button>
         </div>
         <nav class="nav-desktop">
             <ul>
@@ -44,7 +36,6 @@
             </ul>
         </nav>
     </header>
-    <!--Pop-up perfil/configurações-->
     <aside id="aside">
         <div class="perfilAside">
             <img src="images/pfp.png" alt="Imagem de Pefil">
@@ -62,34 +53,32 @@
             <button id="fontUp2">A+</button>
         </div>
     </aside>
-    <!--Conteúdo-->
-    <section class="recomendados" id="recomendados">
-        <article class="content-mobile">
-            <div class="contentPerfil-mobile">
-                <img src="images/pfp.png" alt="Imagem de Pefil">
-                <h3>@NomeUser</h3>
-            </div>
-            <p class="recomendacao">Recomendado por quem você segue</p>
-            <button class="btnProduto"><a href="[id].html">Ver Produto</a></button>
-        </article>
-        <article class="content-mobile">
-            <div class="contentPerfil-mobile">
-                <img src="images/pfp.png" alt="Imagem de Pefil">
-                <h3>@NomeUser</h3>
-            </div>
-            <p class="recomendacao">Alta demanda</p>
-            <button class="btnProduto"><a href="[id].html">Ver Produto</a></button>
-        </article>
-        <article class="content-mobile">
-            <div class="contentPerfil-mobile">
-                <img src="images/pfp.png" alt="Imagem de Pefil">
-                <h3>@NomeUser</h3>
-            </div>
-            <p class="recomendacao">Novo usuário</p>
-            <button class="btnProduto"><a href="[id].html">Ver Produto</a></button>
-        </article>
+    <!--Tela de Produto-->
+    <section class="bodyProduto" id="bodyProduto">
+        <div class="produto">
+            <article class="infoProduto">
+                <h2>Farei uma pixel art para você</h2>
+                <img src="https://www.clipstudio.net/wp-content/uploads/2020/06/0116_001.png" alt="Amostra de pixel art" class="imgProduto">
+                <h3>Descrição</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit cupiditate, dignissimos,
+                    unde
+                    blanditiis consectetur a aliquam temporibus sed quas laudantium ut eos possimus voluptatibus nemo!
+                    Asperiores, soluta? Sed, consectetur.</p>
+            </article>
+
+            <article class="compraProduto">
+                <h4>Deluxe</h4>
+                <p>R$300,00</p>
+                <div class="infoCompra">
+                    <p>1 Personagem/Figura a sua escolha</p>
+                    <br>
+                    <p>Entregue em até <b>2 semanas</b></p>
+                </div>
+                <button class="btnCompra">Comprar</button>
+            </article>
+        </div>
     </section>
-    <script src="script/main.js"></script>
+    <script src="/script/produto.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,63 @@
+.bodyProduto {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: whitesmoke;
+}
+
+.produto {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoProduto > h2 {
+    width: 70%;
+    margin-bottom: 2vh;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #A94BE3;
+}
+
+.infoProduto > h3 {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.infoProduto {
+    width: 30vw;
+    margin-top: 4vh;
+}
+
+.infoCompra {
+    width: 100%;
+    margin: 0 3vw;
+}
+
+.imgProduto {
+    border-radius: 5px;
+    height: 40vh;
+    width: auto;
+}
+
+.compraProduto {
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    width: 22vw;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btnCompra {
+    background-color: #A94BE3 !important;
+    border-radius: 5px;
+    color: white;
+    height: 4vh;
+    width: 12vw;
+}
+
+.nmON > .produto > .compraProduto {
+    background-color: rgb(68, 68, 68);
+}
+
