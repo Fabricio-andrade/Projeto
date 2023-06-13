@@ -15,7 +15,7 @@ const titulos = document.getElementsByTagName('h3');
 const btns = document.getElementsByTagName('button');
 const listas = document.getElementsByTagName('li');
 let nmON = 0;
-let size = 1.4;
+let size = 1;
 
 const arrayParag = [...paragrafros, ...titulos, ...btns, ...listas];
 
