@@ -1,4 +1,3 @@
-
 const btnNightMode2 = document.getElementById('nightMode2');
 const btnNightMode3 = document.getElementById('nightMode3');
 
@@ -34,7 +33,7 @@ btnNightMode2.addEventListener('click', () => {
     mobileMenu.classList.toggle('nmON');
     asideMobile.classList.toggle('nmON');
     desktopHeader.classList.toggle('nmON');
-
+    pagProduto.classList.toggle('nmON');
     buttons.forEach(e => {
         if (e.style.color == 'white') {
             e.style.color = 'black';
