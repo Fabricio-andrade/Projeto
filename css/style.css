@@ -187,7 +187,7 @@ aside {
     margin-left: 3vw;
     margin-top: 2vh;
     padding: 2%;
-    background-color: #A94BE3;
+    background-color: #A94BE3 !important;
     border-radius: 4px;
 }
 
